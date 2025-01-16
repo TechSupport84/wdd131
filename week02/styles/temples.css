@@ -1,0 +1,100 @@
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        
+    }
+
+    #navMenu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        display: none; 
+    }
+
+    #navMenu.show {
+        display: flex; 
+        max-height: 500px; 
+    }
+
+    #navMenu li {
+
+        width: 100%; 
+        text-align: center;
+    }
+
+    #navMenu li a {
+        display: block; 
+        padding: 10px;
+        text-align: center;
+    }
+    #navMenu li a:hover{
+        background-color: #747373;
+        color: #333;
+        padding: 20px;
+        
+        
+        
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}
+
+figure {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 1.2em;
+    }
+
+    figcaption {
+        font-size: 0.9em;
+    }
+}

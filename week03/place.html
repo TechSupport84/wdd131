@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Jeancy-Mpoyi In this web page I am going to tell you about me, my country, and my hobbies.">
+    <meta name="author" content="Jeancy Mpoyi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/place.css">
+    <title>Place Country</title>
+</head>
+<body>
+    <header>
+        <h1>Democratic Republic of the Congo</h1>
+    </header>
+
+    <main>
+        <div class="line"></div>
+        <section class="image-background-container">
+            <img class="image-background" srcset="./images/monkey.webp" alt="Background Image"/>
+        </section>
+
+        <div class="content-wrapper">
+            <section class="card left-side">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 	2,345,409 km2</li>
+                    <li><strong>Population:</strong>  111,050,097</li>
+                    <li><strong>Capital:</strong>  Kinshasa </li>
+                    <li><strong>Languages:</strong>  French, Kikongo ya leta[a],Lingala, Swahili, Tshiluba</li>
+                    <li><strong>Currency:</strong> Congolese franc (CDF)</li>
+                    <li><strong>Time Zone:</strong> UTC+1 to +2 (WAT and CAT)</li>
+                    <li><strong>Calling Code:</strong>  +243</li>
+                    <li><strong>Internet TLD: </strong> .cd</li> 
+                </ul>
+            </section>
+
+            <section class="card right-side">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <img src="./images/314165_cloud_rain_sun_icon.svg" alt="Weather Icon"/>
+                </div>
+                <ul>
+                    <li><strong>Temperature:</strong> 25°C°F </li>
+                    <li><strong>Condition:</strong> Clear</li>
+                    <li><strong>Wind: </strong> 11 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jeancy Mpoyi. D R Congo.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/place.js"></script>
+</body>
+</html>

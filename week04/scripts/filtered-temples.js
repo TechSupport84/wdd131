@@ -77,20 +77,41 @@ const temples = [
   nonUtahTemple.addEventListener("click", ()=>{
     let nonUtah = temples.filter(temple => temple.location.includes("Utah"));
     createTempleCard(nonUtah)
+    let p = document.createElement("p");
+     p.innerHTML = `<h1  class ="label">Non Utah Temples </h1> `
+     let resGrid = document.querySelector(".title-card")
+     resGrid.innerHTML = "";
+     resGrid.append(p);
   })
 
   newTemples.addEventListener("click", ()=>{
     let newTemple = temples.filter(temple => temple.dedicated.includes(2020));
     createTempleCard(newTemple)
+    let p = document.createElement("p");
+     p.innerHTML = `<h1  class ="label">New Temple(s) </h1> `
+     let resGrid = document.querySelector(".title-card")
+     resGrid.innerHTML = "";
+     resGrid.append(p);
   })
   largeTemplate.addEventListener("click", ()=>{
     let largeT = temples.filter(temple =>temple.area > 50000)
     createTempleCard(largeT)
+    let p = document.createElement("p");
+     p.innerHTML = `<h1  class ="label">Large Temples by Size </h1> `
+     let resGrid = document.querySelector(".title-card")
+     resGrid.innerHTML = "";
+     resGrid.append(p);
   })
 
   smallTemple.addEventListener("click", ()=>{
     let smallT = temples.filter( temple => temple.area <= 50000)
+
     createTempleCard(smallT)
+    let p = document.createElement("p");
+     p.innerHTML = `<h1  class ="label">Small Temples by Size </h1> `
+     let resGrid = document.querySelector(".title-card")
+     resGrid.innerHTML = "";
+     resGrid.append(p);
   })
   function createTempleCard (filteredTemple)
   {

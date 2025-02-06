@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.overAll-Rating {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.overAll-Rating .rating-options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.Usefull-choice{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+fieldset {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+.question{
+font-size: 18px;
+}
+.checkApply{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+}
+.optional{
+    color: rgb(59, 59, 227);
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .rating-options {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
